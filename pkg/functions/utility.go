@@ -4,7 +4,7 @@
 package functions
 
 import (
-	"github.com/chainguard-dev/bomshell/pkg/elements"
+	"github.com/protobom/cel/pkg/elements"
 	"github.com/protobom/protobom/pkg/sbom"
 	"github.com/sirupsen/logrus"
 )

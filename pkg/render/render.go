@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/chainguard-dev/bomshell/pkg/elements"
 	"github.com/google/cel-go/common/types"
+	"github.com/protobom/cel/pkg/elements"
 	"github.com/protobom/protobom/pkg/sbom"
 )
 

@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/chainguard-dev/bomshell/pkg/elements"
 	"github.com/google/cel-go/cel"
 	"github.com/google/cel-go/common/types/ref"
+	"github.com/protobom/cel/pkg/elements"
 	"github.com/protobom/protobom/pkg/formats"
 	"github.com/sirupsen/logrus"
 )

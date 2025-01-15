@@ -11,9 +11,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/chainguard-dev/bomshell/pkg/elements"
 	"github.com/google/cel-go/cel"
 	"github.com/google/cel-go/common/types/ref"
+	"github.com/protobom/cel/pkg/elements"
 	"github.com/protobom/protobom/pkg/reader"
 	"github.com/protobom/protobom/pkg/sbom"
 	"github.com/protobom/protobom/pkg/writer"

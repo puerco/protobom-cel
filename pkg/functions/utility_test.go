@@ -6,7 +6,7 @@ package functions
 import (
 	"testing"
 
-	"github.com/chainguard-dev/bomshell/pkg/elements"
+	"github.com/protobom/cel/pkg/elements"
 	"github.com/protobom/protobom/pkg/sbom"
 	"github.com/stretchr/testify/require"
 )

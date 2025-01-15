@@ -6,12 +6,12 @@ package shell
 import (
 	"fmt"
 
-	"github.com/chainguard-dev/bomshell/pkg/elements"
-	"github.com/chainguard-dev/bomshell/pkg/functions"
 	"github.com/google/cel-go/cel"
 	"github.com/google/cel-go/common/types"
 	"github.com/google/cel-go/common/types/ref"
 	"github.com/google/cel-go/ext"
+	"github.com/protobom/cel/pkg/elements"
+	"github.com/protobom/cel/pkg/functions"
 	"github.com/protobom/protobom/pkg/sbom"
 	// "github.com/google/cel-go/common/operators"
 	// "github.com/google/cel-go/common/types/traits"
@@ -174,36 +174,15 @@ func (shellLibrary) CompileOptions() []cel.EnvOption {
 				cel.FunctionBinding(functions.RelateNodeListAtID),
 			),
 		),
-		/*
-			cel.Macros(
-				// cel.bind(var, <init>, <expr>)
-				cel.NewReceiverMacro("LoadSBOM", 1, celBind),
-			),
-		*/
 	}
 }
 
-func (shellLibrary) LibraryName() string {
-	return "cel.chainguard.bomshell"
+func (shellLibrary) ProgramOptions() []cel.ProgramOption {
+	return []cel.ProgramOption{}
 }
 
-func (shellLibrary) ProgramOptions() []cel.ProgramOption {
-	/*
-		return []cel.ProgramOption{
-			// cel.Functions(functions.StandardOverloads()...),
-
-			cel.Functions(
-				&celfuncs.Overload{
-					Operator:     "++", /// Placegholder while I figure out how to overload operators.Add
-					OperandTrait: traits.AdderType,
-					Binary:       functions.Addition,
-					// Function:     functions.AdditionOp,
-					//NonStrict: false,
-				},
-			),
-		}
-	*/
-	return []cel.ProgramOption{}
+func (shellLibrary) LibraryName() string {
+	return "cel.protobom.api"
 }
 
 func Library() cel.EnvOption {
