@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/cel-go/common/types/ref"
+	"cel.dev/cel-go/common/types/ref"
 	"github.com/protobom/protobom/pkg/sbom"
 	"github.com/stretchr/testify/require"
 

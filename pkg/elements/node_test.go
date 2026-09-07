@@ -6,7 +6,7 @@ package elements_test
 import (
 	"testing"
 
-	"github.com/google/cel-go/common/types/ref"
+	"cel.dev/cel-go/common/types/ref"
 	"github.com/stretchr/testify/require"
 
 	"github.com/protobom/cel/pkg/runner"
