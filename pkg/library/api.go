@@ -4,8 +4,8 @@
 package library
 
 import (
-	"github.com/google/cel-go/cel"
-	"github.com/google/cel-go/common/types"
+	"cel.dev/cel-go/cel"
+	"cel.dev/cel-go/common/types"
 
 	"github.com/protobom/cel/pkg/elements"
 	"github.com/protobom/cel/pkg/functions"

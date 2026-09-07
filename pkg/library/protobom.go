@@ -8,7 +8,7 @@ package library
 import (
 	"slices"
 
-	"github.com/google/cel-go/cel"
+	"cel.dev/cel-go/cel"
 	"github.com/protobom/protobom/pkg/sbom"
 
 	"github.com/protobom/cel/pkg/adapter"

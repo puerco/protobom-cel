@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/google/cel-go/cel"
-	"github.com/google/cel-go/checker/decls"
-	"github.com/google/cel-go/common/types"
-	"github.com/google/cel-go/common/types/ref"
-	"github.com/google/cel-go/common/types/traits"
+	"cel.dev/cel-go/cel"
+	"cel.dev/cel-go/checker/decls"
+	"cel.dev/cel-go/common/types"
+	"cel.dev/cel-go/common/types/ref"
+	"cel.dev/cel-go/common/types/traits"
 	"github.com/protobom/protobom/pkg/sbom"
 )
 
@@ -127,7 +127,7 @@ func (nl *NodeList) HasNodeWithID(nodeID string) bool {
 }
 
 // We implement the indexer trait, slowly these types should implement more:
-// // https://pkg.go.dev/github.com/google/cel-go/common/types/traits
+// // https://pkg.go.dev/cel.dev/cel-go/common/types/traits
 var _ traits.Indexer = (*NodeList)(nil)
 
 func (nl *NodeList) Get(index ref.Val) ref.Val {
